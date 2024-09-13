@@ -1,0 +1,33 @@
+programa {
+    funcao inicio() {
+        cadeia nome
+        inteiro idade
+        cadeia estado
+        cadeia condicao
+        
+        // Bloco de entrada de dados do usuário
+        escreva("SISTEMA DE GRAVAÇÃO DE DADOS PESSOAIS\n")
+        escreva("\n")
+        
+        escreva("Digite seu nome: ")
+        leia(nome)
+        
+        escreva("Digite sua idade: ")
+        leia(idade)
+        
+        escreva("Digite a sigla do estado de nascimento: ")
+        leia(estado)
+        escreva ("\n")
+        escreva("Os dados acima estão corretos?\n")
+        escreva("S - Sim / N - Não: ")
+        leia(condicao)
+
+        // Condicional para a operação escolhida pelo usuário
+        se (condicao == "S")
+          escreva("Finalizamos o procedimento de cadastro")
+         senao se (condicao == "N")
+        limpar() 
+        retorne inicio ()
+        
+    }
+}
